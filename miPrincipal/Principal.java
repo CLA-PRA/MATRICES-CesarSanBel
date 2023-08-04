@@ -97,35 +97,15 @@ public class Principal {
 
     public static int[][] sumaMatrices(int[][] m1, int[][] m2) {
     	int ma3[][] = new int[m1.length][m1[0].length];
-        for(int i=0; i<m1.length; i++) {
-           	for(int j=0; j<m1[i].length; j++) {
-           		ma3[i][j] = m1[i][j]+m2[i][j];
-           	}
-        }
         return ma3;
     }
     public static int[][] multiplicaMatrices(int[][] m1, int[][] m2) {
         int ma4[][] = new int[m1.length][m1[0].length];
- 
-        int suma=0;
-        for(int i=0; i<m1.length; i++) {
-        	for(int j=0; j<m1[i].length; j++) {
-        		for(int k=0; k<m1[i].length; k++) {
-        			suma = suma + m1[i][k]*m2[k][j];
-        		}
-        		ma4[i][j] = suma;
-        		suma=0;
-        	}
-       	}
        	return ma4;
     }
     public static boolean sePuedeMultiplicar(int[][] m1, int[][] m2) {
         int m3[][] = new int[m1.length][m1[0].length];
         int m4[][] = new int[m2.length][m2[0].length];
-        if(m1.length==m1[0].length && m1.length==m1[0].length) {
-            return true;
-        } else {
-            return false;
-        }
+        return false;
     }
 }
